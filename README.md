@@ -1,3 +1,4 @@
 # agileSentiment
 
-- pip install --user -U nltk
+- pip install nltk
+- pip install flask
