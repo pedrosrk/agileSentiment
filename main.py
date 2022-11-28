@@ -12,7 +12,6 @@ def my_form_post():
     text = request.form['text']
     msgUser = analysisSentiment(text)
     result = str(msgUser.englishSentiment())
-    #processed_text = text.upper()
     return result
 
 if __name__ == "__main__":
