@@ -5,3 +5,6 @@
 - .\agl\Scripts\activate <br>
 
 Obs.: .gitignore will ignore the agl enviroment
+
+## Create and execute the requeriments.txt <br>
+pip install -r /path/to/requirements.txt
