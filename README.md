@@ -1,7 +1,7 @@
 # agile Sentiment
 
-Create and execute the enviroment bellow
-python -m venv agl
-.\agl\Scripts\activate
+<h1>Create and execute the enviroment bellow <\h1>
+- python -m venv agl <br>
+- .\agl\Scripts\activate <br>
 
 Obs.: .gitignore will ignore the agl enviroment
