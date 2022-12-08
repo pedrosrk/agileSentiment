@@ -11,8 +11,11 @@ def my_form():
 def my_form_post():
     text = request.form['text']
     msgUser = analysisSentiment(text)
-    result = str(msgUser.englishSentiment())
-    return result
+    score = msgUser.englishSentiment()
+    pos = score["pos"]
+    neg = score["neg"]
+    neu = score["neu"]
+    return "The positivity is " + str(pos) + "<br>The negativity is " + str(neg)
 
 if __name__ == "__main__":
     app.run(debug=True)
