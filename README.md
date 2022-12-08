@@ -7,7 +7,7 @@
 Obs.: .gitignore will ignore the agl enviroment
 
 ## Create and execute the requeriments.txt <br>
-pip install -r requirements.txt
+pip install -r requirements.txt <br>
 If you receive a yellow WARNING about pip atualization, I suggest you update your pip.
 
 ## Finaly execute the aplication
