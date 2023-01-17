@@ -18,4 +18,4 @@ def my_form_post():
     return "The positivity is " + str(pos) + "<br>The negativity is " + str(neg)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host ='0.0.0.0')
