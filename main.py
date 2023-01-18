@@ -15,7 +15,7 @@ def my_form_post():
     pos = score["pos"]
     neg = score["neg"]
     neu = score["neu"]
-    return "The positivity is " + str(pos) + "<br>The negativity is " + str(neg)
+    return "The positivity is " + str(pos) + "<br>The negativity is " + str(neg) + "<br>The neutrality is " + str(neu)
 
 if __name__ == "__main__":
     app.run(debug=True, host ='0.0.0.0')
