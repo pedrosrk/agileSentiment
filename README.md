@@ -4,7 +4,7 @@
 - python -m venv agl <br>
 - .\agl\Scripts\activate <br>
 
-Obs.: .gitignore will ignore the agl enviroment
+Obs.: .gitignore will ignore the agl enviroment!!!
 
 ## Create and execute the requeriments.txt <br>
 pip install -r requirements.txt <br>
