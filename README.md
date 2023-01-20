@@ -12,3 +12,13 @@ If you receive a yellow WARNING about pip, I suggest to update your pip.
 
 ## Finaly execute the aplication
 python .\main.py
+
+## To update libraries usued in requeriments
+- pip freeze > requirements.txt
+
+## To use git to update the repository
+- git init
+- git add .
+- git commit -m "msg"
+- git push
+
