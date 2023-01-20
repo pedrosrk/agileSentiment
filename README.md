@@ -2,7 +2,8 @@
 
 ## Create and execute the enviroment bellow <br>
 - python -m venv agl <br>
-- .\agl\Scripts\activate <br>
+- Windows .\agl\Scripts\activate <br>
+- Ubuntun source ./agl/bin/activate <br>
 
 Obs.: .gitignore will ignore the agl enviroment!!!
 
@@ -21,4 +22,16 @@ python .\main.py
 - git add .
 - git commit -m "msg"
 - git push
+- git stash push --include-untracked (AWS Machine)
+- git pull (AWS Machine)
 
+## Aws InfraStructure deploy
+- pm2 delete agilim
+- pm2 save
+- pm2 start main.py --interpreter python3 --watch --name agilim
+- pm2 save
+
+## Aws InfraStructure database
+- mysql -u root -p
+- USE agilim
+- SELECT * from users;
