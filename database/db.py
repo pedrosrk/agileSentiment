@@ -9,6 +9,8 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
+# CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(1255), email VARCHAR(1255);
+# CREATE TABLE users (ID int, name varchar(255), email varchar(255))
 def init_user_dataBase(tableName):
     mycursor.execute(
         "CREATE TABLE " + tableName + " (id INT AUTO_INCREMENT PRIMARY KEY,"
@@ -27,3 +29,5 @@ def add(val, tableName):
     # init_user_dataBase("users")
     val = ("pedro", "p@net.com")
     add(val, "users")'''
+
+# CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(1255), email VARCHAR(1255);
