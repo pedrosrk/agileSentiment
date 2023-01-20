@@ -31,6 +31,4 @@ def my_form_post():
     return render_template('satisfation.html', pos=pos, neg=neg, neu=neu ) #"The positivity is " + str(pos) + "<br>The negativity is " + str(neg)
 
 if __name__ == "__main__":
-    #val = ("rafa", "r@net.com")
-    #db.add(val, "users")
     app.run(debug=True, host='0.0.0.0') #app.run(debug=True, host='0.0.0.0', port=3000)
