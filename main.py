@@ -14,7 +14,7 @@ def my_home_post():
     email = request.form['email']
     val = (name, email)
     db.add(val, "users")
-    return redirect('/message'), render_template('text.html', name=name, email=email)
+    return render_template('text.html', name=name, email=email)
 
 @app.route('/message')
 def my_form():
