@@ -28,6 +28,7 @@ python .\main.py
 ## Aws InfraStructure deploy
 - pm2 delete agilim
 - pm2 save
+- rm -rf agileSentiment/
 - git clone https://github.com/pedrosrk/agileSentiment.git
 - cd agileSentiment
 - pm2 start main.py --interpreter python3 --watch --name agilim
