@@ -12,8 +12,8 @@ def my_home():
 def my_home_post():
     name = request.form['name']
     email = request.form['email']
-    val = (name, email)
-    db.add(val, "users")
+    #val = (name, email)
+    #db.add(val, "users")
     return render_template('text.html', name=name, email=email)
 
 @app.route('/message')
