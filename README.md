@@ -31,6 +31,9 @@ python .\main.py
 - rm -rf agileSentiment/
 - git clone https://github.com/pedrosrk/agileSentiment.git
 - cd agileSentiment
+- python -m venv agl
+- source ./agl/bin/activate
+- pip install -r requirements.txt
 - pm2 start main.py --interpreter python3 --watch --name agilim
 - pm2 save
 
