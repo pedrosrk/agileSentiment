@@ -23,11 +23,13 @@ def add(val, tableName):
     mycursor.execute(sql, val)
     mydb.commit()
 
+def get_users():
+    mycursor.execute("SELECT * FROM users")
+    return mycursor.fetchall()
 
 if __name__ == '__main__':
-    init_user_dataBase("users")
-    val = ("pedro", "p@net.com")
-    add(val, "users")
+    users = get_users()
+    print(users)
 
 
 # CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(1255), email VARCHAR(1255);

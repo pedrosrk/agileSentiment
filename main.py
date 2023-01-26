@@ -6,15 +6,7 @@ app = Flask(__name__)
 
 @app.route('/users', methods=['GET'])
 def agiim_users():
-    return jsonify({
-        'name': 'Pedro',
-        'email': 'pedro.net@com',
-        'msg': '',
-        'pos': 0,
-        'neu': 0,
-        'neg': 0,
-        'correctFell': True
-    })
+    return jsonify(db.get_users())
 
 
 @app.route('/register', methods=['GET'])
@@ -41,8 +33,6 @@ def my_msg_register():
         return json
     else:
         return 'Content-Type not supported!'
-
-
 
 @app.route('/')
 def my_home():
