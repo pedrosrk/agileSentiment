@@ -41,3 +41,5 @@ python .\main.py
 - mysql -u root -p
 - USE agilim
 - SELECT * from users;
+
+## Aws InfraStructure create Instance

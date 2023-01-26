@@ -24,10 +24,10 @@ def add(val, tableName):
     mydb.commit()
 
 
-
-'''if __name__ == '__main__':
-    # init_user_dataBase("users")
+if __name__ == '__main__':
+    init_user_dataBase("users")
     val = ("pedro", "p@net.com")
-    add(val, "users")'''
+    add(val, "users")
+
 
 # CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(1255), email VARCHAR(1255);

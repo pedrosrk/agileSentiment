@@ -1,8 +1,48 @@
 from api.vanderSentiment import analysisSentiment
-from flask import Flask, request, render_template, redirect
-from database import db
+from flask import Flask, request, render_template, jsonify
+import database.db as db
 
 app = Flask(__name__)
+
+@app.route('/users', methods=['GET'])
+def agiim_users():
+    return jsonify({
+        'name': 'Pedro',
+        'email': 'pedro.net@com',
+        'msg': '',
+        'pos': 0,
+        'neu': 0,
+        'neg': 0,
+        'correctFell': True
+    })
+
+
+@app.route('/register', methods=['GET'])
+def show_register():
+    return jsonify({
+        'name': 'Pedro',
+        'email': 'pedro.net@com',
+        'msg': '',
+        'pos': 0,
+        'neu': 0,
+        'neg': 0,
+        'correctFell': True
+    })
+
+@app.route('/register', methods=['POST'])
+def my_msg_register():
+    content_type = request.headers.get('Content-Type')
+    if (content_type == 'application/json'):
+        json = request.get_json()
+        name = json['name']
+        email = json['email']
+        val = (name, email)
+        db.add(val, 'users')
+        return json
+    else:
+        return 'Content-Type not supported!'
+
+
 
 @app.route('/')
 def my_home():
